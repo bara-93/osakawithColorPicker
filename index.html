@@ -17,6 +17,20 @@
     
 </head>
 <body>
+  <!-- spinner  -->
+  <div id="loadingSpinner" class="align-items-center justify-content-center">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+  </div>
+  <!-- end Spinner -->
+  <button class="btn btn-secondary rounded-circle" id="btnUP">
+    <i class="fa-solid fa-circle-arrow-up"></i>
+  </button>
+  <!-- colorBox to change colors of text -->
   <div class="color-box">
     <div class="color-options">
       <h3>Colors</h3>
@@ -30,9 +44,10 @@
     </div>
     <i class="fa-solid fa-gear"></i>
   </div>
-  
+  <!-- End Color Box -->
+
   <!-- #### start header ###### -->
-  <header class="vh-100 bg-dark d-flex align-items-center ">
+  <header class="vh-100 bg-dark d-flex align-items-center " id="home">
       <nav class="navbar navbar-expand-lg navbar-dark  fixed-top ">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Osaka</a>
@@ -48,7 +63,7 @@
                   <a class="nav-link" href="#">about</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">service</a>
+                  <a class="nav-link" href="#">services</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">portfolio</a>
@@ -77,7 +92,7 @@
 
 
   <!-- #### start about ###### -->
-  <section class="about py-5   ">
+  <section class="about py-5" id="about">
     <div class="title text-center position-relative ">
       <h2 class=" text-capitalize ">about</h2>
       <h3 class=" text-capitalize translate-middle colorChange">about</h3>
@@ -103,7 +118,7 @@
   <!-- ####end about####  -->
 
   <!-- ####start services##### -->
-  <section class="services py-5 text-center">
+  <section class="services py-5 text-center" id="services">
     <div class="title position-relative ">
       <h2 class=" text-capitalize ">services</h2>
       <h3 class=" text-capitalize translate-middle">services</h3>
@@ -168,7 +183,7 @@
   <!-- #### end services ###### -->
 
   <!-- ####start portfolio##### -->
-    <section class="portfolio text-center py-5">
+    <section class="portfolio text-center py-5" id="portfolio">
       <div class="title position-relative ">
         <h2 class=" text-capitalize ">portfolio</h2>
         <h3 class=" text-capitalize translate-middle">portfolio</h3>

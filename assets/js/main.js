@@ -15,3 +15,34 @@ $(".color-box i").click(function(){
     }
     
 })
+let aboutSection = $("#about").offset().top;
+$(window).scroll(function(){
+    let tscroll = $(window).scrollTop();   
+    if(tscroll >= aboutSection-50){
+        $(".navbar").css({"backgroundColor":"rgba(0,0,0,0.6)","transition":"all 1s"})
+        $("#btnUP").fadeIn(2000);
+    }else{
+        $(".navbar").css("backgroundColor","transparent");
+        $("#btnUP").fadeOut(2000);
+
+
+    }
+})
+$("#btnUP").click(function(){
+    $(window).scrollTop(0)
+    
+})
+$("a[href='#']").click(function(e){{
+    let hLink = "#"
+    let hLink_text = $(e.target).text();
+    hLink += hLink_text
+    let sectionOffset = $(hLink).offset().top;
+    $("html,body").animate({scrollTop:sectionOffset},1000)
+}})
+$(document).ready(function(){
+$("#loadingSpinner .sk-folding-cube").fadeOut(7000);
+$("#loadingSpinner").fadeOut(7000);
+$('body').css("overflow","auto")
+
+
+})
