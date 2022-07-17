@@ -40,9 +40,23 @@ $("a[href='#']").click(function(e){{
     $("html,body").animate({scrollTop:sectionOffset},1000)
 }})
 $(document).ready(function(){
-$("#loadingSpinner .sk-folding-cube").fadeOut(7000);
-$("#loadingSpinner").fadeOut(7000);
+$("#loadingSpinner .sk-folding-cube").fadeOut(4000);
+$("#loadingSpinner").fadeOut(4000);
 $('body').css("overflow","auto")
 
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel(
+        {loop:true,
+        margin:25,
+        stagePadding:15
+
+    }
+    );
+  });
+
+
+  $(document).ready(function() {
+    $(".skitter-large").skitter();
+  });
 
 })

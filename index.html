@@ -14,18 +14,21 @@
 
     <!-- custom css  -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- skitter slider -->
+    <link rel="stylesheet" href="assets/css/skitter.css">
 </head>
 <body>
   <!-- spinner  -->
-  <div id="loadingSpinner" class="align-items-center justify-content-center">
+  <!-- <div id="loadingSpinner" class="align-items-center justify-content-center">
     <div class="sk-folding-cube">
       <div class="sk-cube1 sk-cube"></div>
       <div class="sk-cube2 sk-cube"></div>
       <div class="sk-cube4 sk-cube"></div>
       <div class="sk-cube3 sk-cube"></div>
     </div>
-  </div>
+  </div> -->
   <!-- end Spinner -->
   <button class="btn btn-secondary rounded-circle" id="btnUP">
     <i class="fa-solid fa-circle-arrow-up"></i>
@@ -280,7 +283,42 @@
 
   <!-- ####end portfolio##### -->
 
+<!-- Jquery plugins -->
+    <h3 class="text-center text-muted ">
+      Here we will use Jquery plugins:<br/><br/>
+     <span class="text-danger mt-5"> 1- start with owl.carousel.js</span>
+    </h3>
 
+    <div class="owl-carousel owl-theme pt-2">
+      <img src="assets/img/1.jpg" alt="img-1" class="img-fluid">
+      <img src="assets/img/2.jpg" alt="img-1" class="img-fluid">
+      <img src="assets/img/3.jpg" alt="img-1" class="img-fluid">
+      <img src="assets/img/4.jpg" alt="img-1" class="img-fluid">
+      <img src="assets/img/5.jpg" alt="img-1" class="img-fluid">
+      <img src="assets/img/6.jpg" alt="img-1" class="img-fluid">
+    </div>
+
+    <h3 class="text-center text-muted ">
+      
+     <span class="text-danger mt-5"> 2- Skitter Slideshow </span>
+    </h3>
+
+    <div class="skitter skitter-large  w-100  m-auto">
+      <ul>
+        <li>
+          <a href="#cut"><img src="assets/img/1.jpg" alt="img-1" class="img-fluid cut"></a>
+          <div class="label_text"><p>cut</p></div>
+        </li>
+        <li>
+          <a href="#swapBlocks"><img src="assets/img/2.jpg" alt="img-1" class="img-fluid swapBlocks"></a>
+          <div class="label_text"><p>swapBlocks</p></div>
+        </li>
+        <li>
+          <a href="#swapBarsBack"><img src="assets/img/3.jpg" alt="img-1" class="img-fluid swapBarsBack"></a>
+          <div class="label_text"><p>swapBarsBack</p></div>
+        </li>
+      </ul>
+    </div>
 
 
 
@@ -290,6 +328,9 @@
     <!-- bootstrap js 5 -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/jquery.skitter.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

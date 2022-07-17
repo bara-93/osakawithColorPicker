@@ -38,12 +38,14 @@ color: var(--mainColor);
     padding: 10px;
     height: fit-content;
     border:2px solid red;
+    cursor: pointer;
 
 }
 .color-box .color-options li{
     width:25px;
     height: 25px;
     display: inline-block;
+    cursor: pointer;
 }
 /* ####start header##### */
 header{
